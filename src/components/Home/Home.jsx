@@ -1,15 +1,17 @@
-import Banner from "../Banner/Banner";
-import Categories from "../Categories/categories";
-import Featured from "../HomePageComponents/FeaturedJobs/FeaturedJobs";
+
+import Banner from "../HomePageComponents/Banner/Banner";
+
 
 
 const Home = () => {
     return (
         <div className="max-w-7xl mx-auto">
            
-            <Banner></Banner>
-            <Categories></Categories>
-            <Featured></Featured>
+
+            <div>
+                <Banner></Banner>
+            </div>
+
         </div>
     );
 };

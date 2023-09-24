@@ -1,0 +1,6 @@
+.bannerImage{
+    background-image: url('/BannerImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}

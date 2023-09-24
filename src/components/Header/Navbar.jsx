@@ -11,8 +11,8 @@ const Navbar = () => {
         </>
 
     return (
-        <div>
-            <div className="navbar bg-base-100 py-5">
+        <div className="z-20">
+            <div className="navbar  py-5">
                 <div className="navbar max-w-7xl mx-auto">
                     <div className="navbar-start">
                         <div className="dropdown">
@@ -23,10 +23,10 @@ const Navbar = () => {
                                 {Links}
                             </ul>
                         </div>
-                        <img src="/Logo.png" alt="" className="btn btn-ghost normal-case text-2xl "/>
+                        <img src="/Logo.png" alt="" className="btn btn-ghost z-10 text-2xl "/>
                     </div>
                     <div className="navbar-end hidden md:flex">
-                        <ul className="menu menu-horizontal px-1 font-bold">
+                        <ul className="menu menu-horizontal px-1 text-lg font-bold">
                             {Links}
                         </ul>
                     </div>
