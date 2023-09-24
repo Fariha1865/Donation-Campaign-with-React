@@ -5,7 +5,7 @@ import './Root.css'
 const Root = () => {
 
     const {pathname} = useLocation();
-    console.log(pathname)
+
     return (
         <div>
             <div className={pathname === "/"? "bannerImage h-[500px]":""}>

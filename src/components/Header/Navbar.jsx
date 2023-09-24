@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="z-20">
             <div className="navbar  py-5">
-                <div className="navbar max-w-7xl mx-auto">
+                <div className="navbar max-w-6xl mx-auto">
                     <div className="navbar-start">
                         <div className="dropdown">
                             <label tabIndex={0} className="btn btn-ghost md:hidden">
