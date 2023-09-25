@@ -39,7 +39,7 @@ const Details = () => {
         {
             return successToast(`  You have successfully donated for ${category}`);
         }else{
-            return errorToast(`You have already donated for ${category}`);
+            return errorToast(`You have already donated for this ${category} category`);
 
         } 
     }

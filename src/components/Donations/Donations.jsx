@@ -9,6 +9,7 @@ const Donations = () => {
     const storedDonatedData = getFromLocalStorage();
     const allCategoryDatas = useLoaderData();
 
+    
 
     let storedDonationDatas = allCategoryDatas?.filter(donated => storedDonatedData?.includes(donated.id));
     const [storedDonations, setStoredDonations] = useState(storedDonationDatas.slice(0, 4));
@@ -31,6 +32,8 @@ const Donations = () => {
         if (storedDonatedData.length > 4) {
             setIsHidden(false);
         }
+        
+       
     }, [storedDonatedData.length])
     return (
         <div className="max-w-7xl mx-auto p-5 lg:p-10">
