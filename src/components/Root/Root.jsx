@@ -9,7 +9,7 @@ const Root = () => {
     return (
         <div>
                       <div className={pathname === "/"? "bannerImage h-screen":""}>
-            <div className={pathname==="/" ? "absolute h-screen inset-0 bg-white opacity-90":""}></div>
+            <div className={pathname==="/" ? "absolute h-screen inset-0 bg-white opacity-95":""}></div>
                 <div className="opacity-1">
                 <Navbar></Navbar>
                 </div>
