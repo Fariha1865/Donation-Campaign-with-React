@@ -18,10 +18,15 @@ function addToLocalStorage(id){
     const donated = addedDonations?.find(item=>parseInt(item)===id);
     if(!donated)
     {
+        
         addedDonations.push(id);
-        localStorage.setItem('Donations',JSON.stringify(addedDonations))
+        localStorage.setItem('Donations',JSON.stringify(addedDonations));
+        return true;
+    }else{
+        return false
+
     }
-    
+
 }
 
 export {getFromLocalStorage,addToLocalStorage}
