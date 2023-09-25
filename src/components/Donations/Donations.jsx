@@ -2,7 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import { getFromLocalStorage } from "../../utilities/localStorage";
 import Donation from "./Donation";
 import { useEffect, useState } from "react";
-import { func } from "prop-types";
+
 
 const Donations = () => {
 
