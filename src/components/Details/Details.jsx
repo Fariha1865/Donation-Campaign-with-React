@@ -6,6 +6,7 @@ import './toast.css'
 
 const successToast = (success) => {
 
+   
     toast.success(success, {
         className: 'custom-toast',
         autoClose: 4000,
@@ -23,13 +24,16 @@ const errorToast = (error) => {
 
 const Details = () => {
 
+
     const allCategories = useLoaderData();
     const { categoryId } = useParams();
 
     const selectedCategory = allCategories.find(category => category.id === parseInt(categoryId))
     const { picture, id, category, title, description, text_button_bg, price } = selectedCategory;
 
-    const handleAddDonations = () => {
+    const handleAddDonations = (event) => {
+
+        event.preventDefault();
         const status = addToLocalStorage(id);
         if(status)
         {
@@ -43,7 +47,8 @@ const Details = () => {
 
     return (
         <div className="max-w-7xl mx-auto mb-32">
-        <ToastContainer className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+          <ToastContainer className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+
             <div className="flex flex-col items-center px-10 md:px-16 relative">
                 <div className="relative w-full">
                     <img src={picture} alt="" className="w-full h-[465px] z-0 rounded-md" />
