@@ -13,7 +13,7 @@ const Home = () => {
 
 
             <div>
-                <div className="absolute top-[30%] left-[20%] lg:left-[30%]">
+                <div className="absolute top-[40%] left-[20%] lg:left-[30%]">
                     <Banner></Banner>
                 </div>
                 <Categories categories={categories}></Categories>

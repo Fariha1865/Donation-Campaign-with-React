@@ -1,10 +1,10 @@
 
 function getFromLocalStorage(){
 
-    const allAppliedJobs =JSON.parse(localStorage.getItem('AppliedJobs'));
-    if(allAppliedJobs)
+    const allDonations =JSON.parse(localStorage.getItem('Donations'));
+    if(allDonations)
     {
-        return allAppliedJobs;
+        return allDonations;
     }else{
         return [];
     }
@@ -13,13 +13,13 @@ function getFromLocalStorage(){
 
 function addToLocalStorage(id){
 
-    const appliedJobs = getFromLocalStorage();
-    console.log(appliedJobs)
-    const jobsApplied = appliedJobs.find(item=>parseInt(item)===id);
-    if(!jobsApplied)
+    const addedDonations = getFromLocalStorage();
+    console.log(addedDonations)
+    const donated = addedDonations?.find(item=>parseInt(item)===id);
+    if(!donated)
     {
-        appliedJobs.push(id);
-        localStorage.setItem('AppliedJobs',JSON.stringify(appliedJobs))
+        addedDonations.push(id);
+        localStorage.setItem('Donations',JSON.stringify(addedDonations))
     }
     
 }
