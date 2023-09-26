@@ -25,6 +25,14 @@ const Statistics = () => {
     const totalDonatedCount = getFromLocalStorage();
     setTotalDonated(totalDonatedCount.length)
   },[])
+
+  const TooltipContent = (
+    <div className="custom-tooltip">
+      <p>Total Donation: 12</p>
+      <p>Your Donation: {totalDonated}</p>
+    </div>
+  );
+
   const selectedPercentage = (totalDonated / 12) * 100;
   const remainingPercentage = 100 - selectedPercentage;
 
@@ -55,8 +63,8 @@ const Statistics = () => {
             <Cell key={index} fill={colors[index % colors.length]} />
           ))}
         </Pie>
-        <Legend wrapperStyle={{ right: '0px', top: '75%', transform: 'translate(0, -50%)' }}/>
-        <Tooltip />
+        <Legend  wrapperStyle={{ right: '0px', top: '70%', transform: 'translate(0, -50%)' }}/>
+        <Tooltip content={TooltipContent} className="bg-white p-2 rounded-md"/>
       </PieChart>
     </div>
   );

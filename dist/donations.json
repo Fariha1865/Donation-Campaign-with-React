@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "picture": "https://i.ibb.co/mvj9KTj/Health.png",
+    "title": "Better health for all.",
+    "category": "health",
+    "category_bg": "#0052FF33",
+    "card_bg": "#0052FF26",
+    "text_button_bg": "#0052FF",
+    "price": "$19.99",
+    "description": "Your support can transform lives by ensuring access to quality healthcare for everyone. With your help, we can provide medical services, improve facilities, and make healthcare accessible to those in need, promoting better health for all."
+  },
+  {
+    "id": 2,
+    "picture": "https://i.ibb.co/X39q0N5/Education.png",
+    "title": "Education for everyone.",
+    "category": "education",
+    "category_bg": "#FF444A33",
+    "card_bg": "#FF444A26",
+    "text_button_bg": "#FF444A",
+    "price": "$24.99",
+    "description": "Empower individuals through education. Your donation supports schools, scholarships, and resources, ensuring that every learner, young or old, has the opportunity to acquire knowledge, reach their potential, and shape a brighter future."
+  },
+  {
+    "id": 3,
+    "picture": "https://i.ibb.co/0sC6kmD/Clothing.png",
+    "title": "Clothing for those in need.",
+    "category": "clothing",
+    "category_bg": "#79C23F33",
+    "card_bg": "#79C23F26",
+    "text_button_bg": "#79C23F",
+    "price": "$29.99",
+    "description": "Provide warmth, dignity, and hope through clothing. Your generosity can help provide essential garments to individuals and families facing adversity, offering comfort and a brighter tomorrow."
+  },
+  {
+    "id": 4,
+    "picture": "https://i.ibb.co/dsT9ThZ/Food.png",
+    "title": "Nourishing meals for all.",
+    "category": "food",
+    "category_bg": "#F8714733",
+    "card_bg": "#F8714726",
+    "text_button_bg": "#F87147",
+    "price": "$14.99",
+    "description": "Join us in the fight against hunger. Your donation ensures that nutritious meals reach the most vulnerable, making a direct impact on alleviating hunger and promoting community well-being."
+  },
+  {
+    "id": 5,
+    "picture": "https://i.ibb.co/1nY1B1s/food-1.jpg",
+    "title": "Fighting hunger together.",
+    "category": "food",
+    "category_bg": "#F8714733",
+    "card_bg": "#F8714726",
+    "text_button_bg": "#F87147",
+    "price": "$18.99",
+    "description": "Be a part of our mission to end hunger. Your support ensures that nutritious meals reach those who need it most, making a significant impact on alleviating hunger and promoting the well-being of individuals and communities."
+  },
+  {
+    "id": 6,
+    "picture": "https://i.ibb.co/9vdLfDh/cloth-1.jpg",
+    "title": "Clothing for a brighter future.",
+    "category": "clothing",
+    "category_bg": "#79C23F33",
+    "card_bg": "#79C23F26",
+    "text_button_bg": "#79C23F",
+    "price": "$34.99",
+    "description": "Your kindness provides warmth, dignity, and hope through clothing. Your generosity can help provide essential garments to individuals and families facing adversity, offering comfort and a brighter tomorrow."
+  },
+  {
+    "id": 7,
+    "picture": "https://i.ibb.co/PGM7k3p/education-1.jpg",
+    "title": "Empowering education for all.",
+    "category": "education",
+    "category_bg": "#FF444A33",
+    "card_bg": "#FF444A26",
+    "text_button_bg": "#FF444A",
+    "price": "$27.99",
+    "description": "Unlock the potential of education. Your donation supports schools, scholarships, and resources, ensuring that every learner, young or old, has the opportunity to acquire knowledge, reach their potential, and shape a brighter future."
+  },
+  {
+    "id": 8,
+    "picture": "https://i.ibb.co/MNdvpwT/health-1.jpg",
+    "title": "Healthcare for everyone.",
+    "category": "health",
+    "category_bg": "#0052FF33",
+    "card_bg": "#0052FF26",
+    "text_button_bg": "#0052FF",
+    "price": "$21.99",
+    "description": "Extend a hand for better health. Your support can transform lives by ensuring access to quality healthcare for everyone. With your help, we can provide medical services, improve facilities, and make healthcare accessible to those in need, promoting better health for all."
+  },
+  {
+    "id": 9,
+    "picture": "https://i.ibb.co/gjMPGM6/health-2.jpg",
+    "title": "Health and hope for all.",
+    "category": "health",
+    "category_bg": "#0052FF33",
+    "card_bg": "#0052FF26",
+    "text_button_bg": "#0052FF",
+    "price": "$23.99",
+    "description": "Your kindness extends the gift of health and hope. With your support, we can transform lives by ensuring access to quality healthcare for everyone. Together, we can provide medical services, improve facilities, and make healthcare accessible to those in need, promoting better health for all."
+  },
+  {
+    "id": 10,
+    "picture": "https://i.ibb.co/GkMQkYV/education-2.jpg",
+    "title": "Transforming lives through education.",
+    "category": "education",
+    "category_bg": "#FF444A33",
+    "card_bg": "#FF444A26",
+    "text_button_bg": "#FF444A",
+    "price": "$31.99",
+    "description": "Ignite the spark of learning. Your donation supports schools, scholarships, and resources, ensuring that every learner, young or old, has the opportunity to acquire knowledge, reach their potential, and shape a brighter future."
+  },
+  {
+    "id": 11,
+    "picture": "https://i.ibb.co/Wt5VT1C/cloth-2.png",
+    "title": "Clothing for a brighter tomorrow.",
+    "category": "clothing",
+    "category_bg": "#79C23F33",
+    "card_bg": "#79C23F26",
+    "text_button_bg": "#79C23F",
+    "price": "$26.99",
+    "description": "Bring warmth, dignity, and hope through clothing. Your generosity can help provide essential garments to individuals and families facing adversity, offering comfort and the promise of a brighter tomorrow."
+  },
+  
+  {
+    "id": 12,
+    "picture": "https://i.ibb.co/mFkm967/food-2.jpg",
+    "title": "Supporting Food Security",
+    "category": "food",
+    "category_bg": "#F8714733",
+    "card_bg": "#F8714726",
+    "text_button_bg": "#F87147",
+    "price": "$17.99",
+    "description": "Join hands in the fight against hunger. Your donation helps ensure that nutritious meals reach those who need them most. Together, we can make a meaningful impact on alleviating food insecurity and promoting the well-being of individuals and communities."
+  }
+]
