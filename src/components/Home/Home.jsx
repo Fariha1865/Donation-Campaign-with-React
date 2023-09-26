@@ -27,7 +27,12 @@ const Home = () => {
 
         if (Category) {
             const searched = categories.filter(category => category.category === Category)
-            setSearchedCategory(searched)
+            if(searched.length >0)
+            {
+                setSearchedCategory(searched)
+            }else{
+                setSearchedCategory(categories)
+            }
         }else{
             setSearchedCategory(categories)
         }
