@@ -60,16 +60,16 @@ const Statistics = () => {
   const colors = ['#00C49F','#FF444A'];
 
   return (
-    <div className='max-w-6xl mx-auto flex justify-center'>
-     
-      <PieChart width={600} height={600}>
+    <div className='max-w-3xl mx-auto flex justify-center'>
+    
+      <PieChart width={300} height={300}>
         <Pie
           data={data}
-          cx={300}
-          cy={200}
+          cx={150}
+          cy={150}
           startAngle={0}
           endAngle={360} 
-          outerRadius={160}
+          outerRadius={120}
           fill="#8884d8"
           dataKey="value"
           labelLine={false}
@@ -79,10 +79,11 @@ const Statistics = () => {
             <Cell key={index} fill={colors[index % colors.length]} />
           ))}
         </Pie>
-        <Legend  wrapperStyle={{ right: '0px', top: '70%', transform: 'translate(0, -50%)' }}/>
+        <Legend  wrapperStyle={{ right: '0px', top: '110%', transform: 'translate(0, -50%)' }}/>
         <Tooltip content={TooltipContent}/>
       </PieChart>
     </div>
+  
   );
 };
 
