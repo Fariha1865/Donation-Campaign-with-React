@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 import { getFromLocalStorage } from "../../utilities/localStorage";
 import Donation from "./Donation";
 import { useEffect, useState } from "react";
@@ -9,12 +9,13 @@ const Donations = () => {
     const storedDonatedData = getFromLocalStorage();
     const allCategoryDatas = useLoaderData();
 
-    
+
 
     let storedDonationDatas = allCategoryDatas?.filter(donated => storedDonatedData?.includes(donated.id));
     const [storedDonations, setStoredDonations] = useState(storedDonationDatas.slice(0, 4));
     const [isHidden, setIsHidden] = useState(true);
     const [noData, setNoData] = useState(true);
+    const { pathname } = useLocation()
 
     function handleSeeAll() {
         setStoredDonations(storedDonationDatas);
@@ -23,18 +24,23 @@ const Donations = () => {
     }
     useEffect(() => {
         if (storedDonatedData.length > 0) {
-              setNoData(false)
+            setNoData(false)
         }
-        if(storedDonatedData.length === 0)
-        {
+        if (storedDonatedData.length === 0) {
             setNoData(true);
         }
         if (storedDonatedData.length > 4) {
             setIsHidden(false);
         }
-        
-       
-    }, [storedDonatedData.length])
+
+
+        if (pathname === "/Donations") {
+            document.title = "Donations"
+        }
+
+
+
+    }, [storedDonatedData.length,pathname])
     return (
         <div className="max-w-7xl mx-auto p-5 lg:p-10">
             <h1 className={`text-4xl text-center mt-20 ${noData ? '' : 'hidden'}`}>No Donations Available</h1>

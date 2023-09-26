@@ -1,14 +1,22 @@
 
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation } from "react-router-dom";
 import Banner from "../HomePageComponents/Banner/Banner";
 import Categories from "../HomePageComponents/Categories/Categories";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 
 const Home = () => {
 
 
+    const {pathname} = useLocation()
+    useEffect(()=>{
+
+        if(pathname==="/")
+        {
+            document.title = "Home"
+        }
+    },[pathname])
 
 
 

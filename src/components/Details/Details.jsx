@@ -1,17 +1,21 @@
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useLocation, useParams } from "react-router-dom";
 import { addToLocalStorage } from "../../utilities/localStorage";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './toast.css'
+import { useEffect } from "react";
 
 const successToast = (success) => {
 
+    
    
     toast.success(success, {
         className: 'custom-toast',
         autoClose: 4000,
     })
 }
+
+
 const errorToast = (error) => {
 
     toast.error(error, {
@@ -27,6 +31,7 @@ const Details = () => {
 
     const allCategories = useLoaderData();
     const { categoryId } = useParams();
+    const {pathname} = useLocation();
 
     const selectedCategory = allCategories.find(category => category.id === parseInt(categoryId))
     const { picture, id, category, title, description, text_button_bg, price } = selectedCategory;
@@ -44,6 +49,13 @@ const Details = () => {
         } 
     }
 
+    useEffect(()=>{
+
+        if(pathname.includes("Details"))
+        {
+            document.title = "Category Details"
+        }
+    },[pathname])
 
     return (
         <div className="max-w-7xl mx-auto mb-32">
